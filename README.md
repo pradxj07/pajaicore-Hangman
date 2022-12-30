@@ -29,10 +29,12 @@ Word is another variable that is assigned a randomly chosen value from the list 
 Again, print is used to show the chosen word in the console. 
 
 guess = input('Enter single letter ')
-guess is a variable that is assigned a user-entered value. "input" function enters the 
+"input" is an in-built python function takes a string as an arguement and shows the message in console. Also, it allows user to enter any value at the prompt. This value is then returned to the program. Here, it is assigned to the variable guess. 
 
+```python
 if(len(guess) == 1 and  guess.isalpha() ):
     print("Good guess!") 
 else:
     print("Oops! That is not a valid input.")
 ```
+The above code checks whether guess is a single alphabet and shows appropriate message.  
