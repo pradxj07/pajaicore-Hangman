@@ -38,3 +38,23 @@ else:
     print("Oops! That is not a valid input.")
 ```
 The above code checks whether guess is a single alphabet and shows appropriate message.  
+
+## Milestone 3
+(File name milestone_3.py)
+As per instructions, two functions were created.
+- check_guess
+- ask_for_input
+
+### check_guess
+Accepts Argument - guess
+this is a _void_ function 
+- Converts the argument guess to lower case 
+- checks whether the value exists in the global sring variable **word** . if it is present, the message "print("Good guess! ",guess1 ,"is in the word.")" is printed in the console else ""Sorry, ",guess1, " is not in the word. Try again." is printed
+
+### ask_for_input 
+Arguments - None 
+This is a _void_ function 
+- runs a while loop asking for a letter via input function and the input is assigned to variable **guess**.   
+-- Every time user enters a value, it is checked to be alphabet and single letter  
+-- when valid input has been entered, the while loop breaks
+- Outside the while loop, the check_guess function is called with **guess** passed as parameter     
