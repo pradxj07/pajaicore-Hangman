@@ -60,3 +60,55 @@ This is a _void_ function
 -- Every time user enters a value, it is checked to be alphabet and single letter  
 -- when valid input has been entered, the while loop breaks
 - Outside the while loop, the check_guess function is called with **guess** passed as parameter     
+
+
+## Milestone 4
+(File name milestone_4.py)
+As per instructions, class named Hangman is created.
+- Attributes: the following atttributes are defined and initilised in the magic method __init__
+-- word_guessed 
+-- not_guessed 
+-- num_letters 
+-- num_lives 
+-- word_list 
+-- word 
+-- list_of_guesses 
+
+### Methods 
+-- __init__ : magic method over-ridden in the class
+-- check_guess: checks whether guess is in the word and marks it accordingly  
+-- ask_for_input: gets input from user and check whether it is a single alphabet  
+
+#### __init__ : 
+Accepts arguments word_list and num_lives (defaulted to 5, if not provided). The attributes are set as follows - 
+-- word_list = set to the value of input word_list
+-- word = randomly chosen from word_list
+-- word_guessed = ['_'] * len(self.word)
+-- not_guessed = contains list of letters not guessed from the word using set
+-- num_letters = number of words not guessed yet 
+-- num_lives = number of wrong guess allowed before the game finishes
+-- list_of_guesses = defaulted to empty list
+
+#### check_guess
+Accepts Argument - self(default), guess
+
+This is a _void_ function 
+- Converts the argument guess to lower case 
+- checks whether the value exists in the global sring variable **word** . if it is present, the message "print("Good guess! ",guess1 ,"is in the word.")" is printed in the console else ""Sorry, ",guess1, " is not in the word. " is printed
+- If the letter is in the word, 
+-- the list **word_guessed** is updated with the letter in appropriate indices
+-- num_letters is reduced by 1
+- If the letter is NOT in the word, 
+-- num_lives is reduced by 1 
+- the guess is added to list_of_guesses
+
+#### ask_for_input 
+Arguments - self (default)
+
+This is a _void_ function 
+- runs a while loop while num_lives > 0 
+-- Asks for a letter via input function and the input is assigned to variable **guess**.   
+-- Every time user enters a value, it is checked to be alphabet and single letter  
+-- if it is a single alphabet, function check_guess is called by passing the guess 
+-- if it is not a single alphabet, message "Invalid letter. Please, enter a single alphabetical character." is printed
+-- If the guess is already in the list_of_guesses message is printed "You already tried that letter!"
