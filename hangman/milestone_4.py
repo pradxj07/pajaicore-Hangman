@@ -24,12 +24,15 @@ class Hangman():
                 print(letterIdx)
             self.num_letters -= 1
             print(self.word_guessed, " / ", self.num_letters)
+        else:
+            self.num_lives -= 1
+            print("Sorry, ",guess1, " is not in the word. ")
+            print("You have", self.num_lives, " left.")
 
-        # else:
-        #     print("Sorry, ",guess1, " is not in the word. Try again.")
+        # self.list_of_guesses.append(guess)
 
     def ask_for_input(self): 
-        while self.num_letters > 0:
+        while self.num_lives > 0:
             guess = input("Enter a letter")
             if not(len(guess) == 1 and  guess.isalpha() ):
                 # break
