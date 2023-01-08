@@ -116,12 +116,13 @@ This is a _void_ function
 ## Milestone 5
 (File name milestone_5.py)
 
-The project was built in 5 milestones 
--- Milestone 2 - In this milestone, I learnt about using in-built python modules like random and python functions like choice, input and data types such as list. Using these, I wrote a code that defines a list of words, choose a randam word from the list, accepts input from the user and checks whether the input is a single letter or not. 
+The project was built in 5 milestones:
 
--- Milestone 3 -  In this milestone, I learnt to define my own functions. I was able to organise code written previously in milestone 2 and write my own functions _check_guess_ and  _ask_for_input_. I also learnt to use loops in python to repeatedly run a piece of code 
+- Milestone 2 - In this milestone, I learnt about using in-built python modules like random and python functions like choice, input and data types such as list. Using these, I wrote a code that defines a list of words, choose a randam word from the list, accepts input from the user and checks whether the input is a single letter or not. 
 
--- Milestone 4 - In milestone 4, I learnt about object-oriented programming and what are objects and classes. I also learnt about attributes and methonds within a class. Using this concept, I was able to define a class Hangman and define the attributes and methods for it. Some of the methods were created using functions that I created in milestone 3.      
+- Milestone 3 -  In this milestone, I learnt to define my own functions. I was able to organise code written previously in milestone 2 and write my own functions _check_guess_ and  _ask_for_input_. I also learnt to use loops in python to repeatedly run a piece of code 
 
--- Milestone 5 - 
+- Milestone 4 - In milestone 4, I learnt about object-oriented programming and what are objects and classes. I also learnt about attributes and methonds within a class. Using this concept, I was able to define a class Hangman and define the attributes and methods for it. Some of the methods were created using functions that I created in milestone 3.      
+
+- Milestone 5 - 
 Milestone 5 was the final milestone of the project. Here, I wrote a new independent function that created an instance object of the Hangman class. Further, the function runs a while loop which executes asks_for_input from Hangman object until number of lives zero or the user had guessed all letters in the random word chosen by the game. 
