@@ -3,7 +3,6 @@ import random
 class Hangman():
     def __init__(self,word_list,num_lives=5):
         self.word = random.choice(word_list)
-
         self.word_guessed = ['_'] * len(self.word)
         not_guessed = set(self.word)
         self.num_letters = len(not_guessed)
@@ -42,7 +41,7 @@ class Hangman():
             elif guess in self.list_of_guesses:
                 print("You already tried that letter!")
             else:  
-                self.check_guess(guess)
+                self.check_guess(guess) 
                 print(self.list_of_guesses)
     # return guess
 
